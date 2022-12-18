@@ -29,17 +29,11 @@
        <h6>warnings will play an audible sound for 5 secs if this page is dangerously unstable. cautions wont play any sound.</h6>
        <div class="alert">
         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-        <strong>warning!</strong>test
+        <strong>warning!</strong> test
       </div>
-      <iframe src="warn.mp3" allow="autoplay" style="display:none" id="iframeAudio">
-    </iframe> 
-    <audio autoplay  id="playAudio">
-        <source src="warn.mp3">
+      <iframe src="blnk.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+      <audio id="player" autoplay>
+        <source src="warn.mp3" type="audio/mp3">
     </audio>
-    <script>  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-        if (!isChrome){
-            $('#iframeAudio').remove()
-        }
-        else {
-            $('#playAudio').remove()
-        }</script>
+    </body>
+    </html>
